@@ -1,22 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blankkkk
+      Mobile development-CA1 Wei-Ming Yang 2022513
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+ <!-- <ion-content [fullscreen]="true"> -->
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
-
+  </ion-header>  -->
   <div id="container">
+    <ion-button expand="block" (click)="UpdateFirstVariable()">The first Button</ion-button>
+    {{ myVariable1 }}
+    <ion-button expand="block" (click)="UpdateSecondVariable()">The Second Button</ion-button>
+    {{ myVariable2}}
+    <ion-button expand="block" (click)="UpdateThirdVariable()">The Third Button</ion-button>
+    {{ myVariable3 }}
+  </div>
+ 
+
+  
+
+  <!-- <div id="container">
     <ion-button expand="block">Block</ion-button>
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    
+  </div> -->
 
-</ion-content>
+<!-- </ion-content> -->
