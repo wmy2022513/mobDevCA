@@ -1,0 +1,7 @@
+{
+  "name": "mobDevCA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
