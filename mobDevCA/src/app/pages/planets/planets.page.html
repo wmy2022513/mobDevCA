@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>planets</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title class="title">planets</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,6 +10,6 @@
       <ion-title size="large">planets</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button expand="full" (click)="gotoFilms()">Switch to Films</ion-button>
-  <ion-button expand="full" (click)="gotoPeople()">Switch to Planets</ion-button>
+  <ion-button class="planets-btn" expand="full" (click)="gotoFilms()">Switch to Films</ion-button>
+  <ion-button class="planets-btn" expand="full" (click)="gotoPeople()">Switch to People</ion-button>
 </ion-content>

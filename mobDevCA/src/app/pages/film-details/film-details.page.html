@@ -7,18 +7,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg">
+<ion-content [fullscreen]="true" class="ion-padding">
   <div id="container">
-    <ion-button [disabled]="clicked" (click)="runHttp() ; clicked = true;" class="btn btn-primary">Show details</ion-button>
-    <ion-list *ngFor="let content of contents" >
-      <h4>Title: {{ content.Title }}</h4>
-      <h3>Year: {{ content.Year }}</h3>
-      <h3>Rated: {{ content.Rated}}</h3>
-      <h3>Released: {{ content.Released }}</h3>
-      <h3>Actors: {{ content.Actors }}</h3>
-      <h3>Awards: {{ content.Awards }}</h3>
-      <h3>imdbID: {{ content.imdbID }}</h3>
-    </ion-list>
+    <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg">
+    <div>
+      <ion-button [disabled]="clicked" (click)="runHttp() ; clicked = true;">Show details</ion-button>
+    </div> 
+      <ion-list *ngFor="let content of contents" >
+        <h3>Title: {{ content.Title }}</h3>
+        <h3>Year: {{ content.Year }}</h3>
+        <h3>Rated: {{ content.Rated}}</h3>
+        <h3>Released: {{ content.Released }}</h3>
+        <h3>Runtime: {{ content.Runtime }}</h3>
+        <h3>Genre: {{ content.Genre }}</h3>
+        <h3>Director: {{ content.Director }}</h3>
+        <h3>Actors: {{ content.Actors }}</h3>
+        <h3>Plot: {{ content.Plot }}</h3>
+        <h3>Language: {{ content.Language }}</h3>
+        <h3>Country: {{ content.Language }}</h3>
+        <h3>Awards: {{ content.Awards }}</h3>
+        <h3>imdbID: {{ content.imdbID }}</h3>
+        <h3></h3>
+      </ion-list>
+    
   </div>
 </ion-content> 
